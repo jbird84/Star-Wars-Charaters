@@ -9,22 +9,30 @@
 import UIKit
 
 class CharacterViewController: UIViewController {
-
+    
+    var characterName = ""
+    var imageArray = [UIImage]()
+    
     override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        self.title = characterName
+        
+        imageArray.append(UIImage(named: "BB8R2D2C3PO")!)
+        imageArray.append(UIImage(named: "BobaFett")!)
+        imageArray.append(UIImage(named: "Chewbacca")!)
+        imageArray.append(UIImage(named: "DarthMaul")!)
+        imageArray.append(UIImage(named: "DarthVader")!)
+        imageArray.append(UIImage(named: "EmperorPalpatine")!)
+        imageArray.append(UIImage(named: "HanSolo")!)
+        imageArray.append(UIImage(named: "KyloRen")!)
+        imageArray.append(UIImage(named: "LukeSkywalker")!)
+        imageArray.append(UIImage(named: "ObiWanKenobi")!)
+        imageArray.append(UIImage(named: "PrincessLeia")!)
+        imageArray.append(UIImage(named: "Rey")!)
+        imageArray.append(UIImage(named: "Yoda")!)
+        
+        
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+    
+    
 }

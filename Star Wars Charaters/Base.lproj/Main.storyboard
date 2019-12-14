@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Z0R-QH-b6f">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
@@ -16,7 +16,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="kHs-mP-izH">
-                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                             </tableView>
                         </subviews>
@@ -29,6 +29,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" id="zGh-N5-yv3"/>
                     <connections>
                         <outlet property="tableView" destination="kHs-mP-izH" id="Ve9-w4-u1Y"/>
                         <segue destination="orO-am-Yjl" kind="show" identifier="Character" id="ifv-2u-EBx"/>
@@ -36,23 +37,84 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="139" y="139"/>
+            <point key="canvasLocation" x="1047.8260869565217" y="138.61607142857142"/>
         </scene>
-        <!--Character View Controller-->
+        <!--Darth Vader-->
         <scene sceneID="NYO-nA-AyH">
             <objects>
                 <viewController id="orO-am-Yjl" customClass="CharacterViewController" customModule="Star_Wars_Charaters" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="TiD-0T-x7f">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aME-Xk-j4Z">
+                                <rect key="frame" x="20" y="550" width="374" height="307"/>
+                                <subviews>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="HDl-E6-bMD">
+                                        <rect key="frame" x="8" y="8" width="358" height="291"/>
+                                        <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <mutableString key="text">Originally a Jedi prophesied to bring balance to the Force, Anakin Skywalker is lured to the dark side of the Force by Palpatine, who manipulates his wavering faith towards the Jedi and his fear of possibly losing his secret wife Padmé Amidala and becomes a Sith Lord. After fighting a lightsaber battle with his former mentor Obi-Wan Kenobi in which he is dismembered, Vader is transformed into a cyborg. He then serves the Galactic Empire as Darth Vader until he redeems himself by saving his son, Luke Skywalker, and seemingly killing Palpatine, sacrificing his own life in the process. He is also the father of Princess Leia, and grandfather of Kylo Ren, the main antagonist of the sequel trilogy.</mutableString>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="HDl-E6-bMD" firstAttribute="centerY" secondItem="aME-Xk-j4Z" secondAttribute="centerY" id="3CB-DH-YSN"/>
+                                    <constraint firstItem="HDl-E6-bMD" firstAttribute="leading" secondItem="aME-Xk-j4Z" secondAttribute="leadingMargin" id="U60-6x-gWl"/>
+                                    <constraint firstItem="HDl-E6-bMD" firstAttribute="trailing" secondItem="aME-Xk-j4Z" secondAttribute="trailingMargin" id="UEc-6Y-YZi"/>
+                                    <constraint firstItem="HDl-E6-bMD" firstAttribute="centerX" secondItem="aME-Xk-j4Z" secondAttribute="centerX" id="V32-WA-9x8"/>
+                                    <constraint firstItem="HDl-E6-bMD" firstAttribute="top" secondItem="aME-Xk-j4Z" secondAttribute="topMargin" id="mNs-Rq-oCF"/>
+                                    <constraint firstItem="HDl-E6-bMD" firstAttribute="bottom" secondItem="aME-Xk-j4Z" secondAttribute="bottomMargin" id="sBo-gY-o6e"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="OyJ-1i-9HQ"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="QVA-oE-O22"/>
+                            </scrollView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DarthVader" translatesAutoresizingMaskIntoConstraints="NO" id="wTL-u5-hax">
+                                <rect key="frame" x="76" y="102" width="262" height="428"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="428" id="IPf-r8-gsK"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="aME-Xk-j4Z" firstAttribute="leading" secondItem="tvu-Sd-rUK" secondAttribute="leading" constant="20" id="5IC-GJ-iLj"/>
+                            <constraint firstItem="tvu-Sd-rUK" firstAttribute="trailing" secondItem="aME-Xk-j4Z" secondAttribute="trailing" constant="20" id="6rr-bY-j2T"/>
+                            <constraint firstItem="wTL-u5-hax" firstAttribute="leading" secondItem="tvu-Sd-rUK" secondAttribute="leading" constant="76" id="Hls-PM-LMq"/>
+                            <constraint firstItem="tvu-Sd-rUK" firstAttribute="bottom" secondItem="aME-Xk-j4Z" secondAttribute="bottom" constant="5" id="Q68-tm-0n0"/>
+                            <constraint firstItem="aME-Xk-j4Z" firstAttribute="top" secondItem="wTL-u5-hax" secondAttribute="bottom" constant="20" id="QXM-m7-ZOz"/>
+                            <constraint firstItem="wTL-u5-hax" firstAttribute="centerX" secondItem="TiD-0T-x7f" secondAttribute="centerX" id="YLe-hY-IPV"/>
+                            <constraint firstItem="wTL-u5-hax" firstAttribute="top" secondItem="tvu-Sd-rUK" secondAttribute="top" constant="14" id="wK2-6D-PF4"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="tvu-Sd-rUK"/>
                     </view>
-                    <navigationItem key="navigationItem" id="ES2-gJ-QCD"/>
+                    <navigationItem key="navigationItem" title="Darth Vader" id="ES2-gJ-QCD"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xYl-Si-c5R" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="914" y="139"/>
+            <point key="canvasLocation" x="1823.1884057971015" y="138.61607142857142"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="UIC-5Y-3X9">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Z0R-QH-b6f" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="OdG-jc-sYC">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="30j-zD-9If"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ABU-jW-RRD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="138.61607142857142"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="DarthVader" width="793" height="1333"/>
+    </resources>
 </document>

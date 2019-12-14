@@ -38,6 +38,11 @@ extension ViewController: UITableViewDataSource, UITableViewDelegate  {
         return nameArray.count
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        performSegue(withIdentifier: "Character", sender: self)
+    }
+    
     
     
 }

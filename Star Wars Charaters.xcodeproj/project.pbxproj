@@ -14,6 +14,7 @@
 		DABC2E1E23A3322700B67351 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DABC2E1D23A3322700B67351 /* Assets.xcassets */; };
 		DABC2E2123A3322700B67351 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DABC2E1F23A3322700B67351 /* LaunchScreen.storyboard */; };
 		DABC2E2923A5636D00B67351 /* CharacterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABC2E2823A5636D00B67351 /* CharacterViewController.swift */; };
+		DABC2E2B23A5818900B67351 /* AboutCharacter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABC2E2A23A5818900B67351 /* AboutCharacter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		DABC2E2023A3322700B67351 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DABC2E2223A3322700B67351 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DABC2E2823A5636D00B67351 /* CharacterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterViewController.swift; sourceTree = "<group>"; };
+		DABC2E2A23A5818900B67351 /* AboutCharacter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutCharacter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				DABC2E1F23A3322700B67351 /* LaunchScreen.storyboard */,
 				DABC2E2223A3322700B67351 /* Info.plist */,
 				DABC2E2823A5636D00B67351 /* CharacterViewController.swift */,
+				DABC2E2A23A5818900B67351 /* AboutCharacter.swift */,
 			);
 			path = "Star Wars Charaters";
 			sourceTree = "<group>";
@@ -141,6 +144,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DABC2E2B23A5818900B67351 /* AboutCharacter.swift in Sources */,
 				DABC2E2923A5636D00B67351 /* CharacterViewController.swift in Sources */,
 				DABC2E1923A3321F00B67351 /* ViewController.swift in Sources */,
 				DABC2E1523A3321F00B67351 /* AppDelegate.swift in Sources */,

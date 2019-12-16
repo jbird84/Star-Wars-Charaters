@@ -90,6 +90,10 @@
                         <viewLayoutGuide key="safeArea" id="tvu-Sd-rUK"/>
                     </view>
                     <navigationItem key="navigationItem" title="Darth Vader" id="ES2-gJ-QCD"/>
+                    <connections>
+                        <outlet property="aboutTextView" destination="HDl-E6-bMD" id="iZO-tu-3NL"/>
+                        <outlet property="characterImageView" destination="wTL-u5-hax" id="95E-5Z-2gP"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xYl-Si-c5R" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
